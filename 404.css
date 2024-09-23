@@ -1,4 +1,4 @@
-.not-found-container {
+.page-container1 {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -7,29 +7,190 @@
   flex-direction: column;
   justify-content: center;
 }
-.not-found-container1 {
+.page-image1 {
+  width: 80px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.page-desktop-menu {
+  flex: 1;
   display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
-.not-found-text1 {
-  color: rgb(38, 38, 38);
-  font-size: 252px;
-  margin-top: -20px;
-  font-weight: 900;
-  margin-bottom: -20px;
-  letter-spacing: -20px;
-}
-.not-found-container2 {
-  width: 421px;
+.page-links1 {
+  flex: 1;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
-.not-found-text2 {
+.page-nav12 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.page-nav13 {
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.page-burger-menu {
+  display: none;
+}
+.page-icon1 {
+  width: var(--dl-size-size-xsmall);
+  cursor: pointer;
+  height: var(--dl-size-size-xsmall);
+}
+.page-mobile-menu1 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.page-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.page-image2 {
+  width: 200px;
+  object-fit: cover;
+}
+.page-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-icon3 {
+  width: var(--dl-size-size-xsmall);
+  cursor: pointer;
+  height: var(--dl-size-size-xsmall);
+}
+.page-links2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.page-nav1 {
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.page-nav2 {
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.page-text3 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.page-hero {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.page-container2 {
+  display: flex;
+  flex-direction: column;
+}
+.page-text5 {
+  font-size: 3rem;
+  max-width: 450px;
+  align-self: center;
   text-align: center;
-  font-weight: 400;
+}
+.page-image3 {
+  width: 200px;
+  align-self: center;
+  object-fit: cover;
+}
+@media(max-width: 991px) {
+  .page-hero {
+    flex-direction: column;
+  }
+  .page-container2 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-right: 0px;
+  }
+  .page-text5 {
+    text-align: center;
+  }
+  .page-text6 {
+    text-align: center;
+  }
+}
+@media(max-width: 767px) {
+  .page-navbar-interactive {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .page-desktop-menu {
+    display: none;
+  }
+  .page-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-nav1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .page-nav2 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .page-text3 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .page-hero {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .page-navbar-interactive {
+    padding: var(--dl-space-space-unit);
+    padding-right: 16px;
+  }
+  .page-mobile-menu1 {
+    padding: 16px;
+  }
+  .page-image2 {
+    width: 90px;
+    height: 84px;
+  }
+  .page-nav2 {
+    text-decoration: none;
+  }
+  .page-hero {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .page-container2 {
+    margin-bottom: var(--dl-space-space-unit);
+    justify-content: center;
+  }
 }

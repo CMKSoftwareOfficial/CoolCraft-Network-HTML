@@ -79,7 +79,7 @@
 }
 .teleport-show {
   display: flex !important;
-  transform: none !important;
+  transform: translateY(0%) !important;
 }
 .buttonFilled {
   color: var(--dl-color-custom-neutral-light);
